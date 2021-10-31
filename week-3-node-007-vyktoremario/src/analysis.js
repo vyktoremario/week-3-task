@@ -60,8 +60,8 @@ async function analysis() {
         mostEarn.name = driverData.name;
         mostEarn.email = driverData.email;
         mostEarn.phone = driverData.phone;
-        mostEarn.noOfTrips = highest(driversIdObj)[1];
-        mostEarn.totalAmountEarned = driverEarn[highest(driverEarn)[0]];
+        mostEarn.noOfTrips = driversIdObj[highest(driverEarn)[1]];
+        mostEarn.totalAmountEarned = highest(driverEarn)[1];
       }
     } catch (error) {}
   });
